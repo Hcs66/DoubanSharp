@@ -1,0 +1,122 @@
+<#@ template language="C#" debug="True"  hostspecific="True" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Text.RegularExpressions" #>
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating"#>
+<#@ import namespace="System.Linq" #>
+
+<# 
+
+    //读取定义文件,构造API类待生成
+	var templates = new string[] { 
+		"DoubanService.Subject.json",
+		"DoubanService.MiniBlog.json",
+		"DoubanService.People.json"
+	};
+
+	List<DoubanSharpMethod> methodList=new List<DoubanSharpMethod>();
+	foreach(var template in templates)
+	{	   
+		string contents = File.ReadAllText(Host.ResolvePath(template));
+		var lines = contents.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+		foreach(var line in lines)
+		{
+			methodList.Add(new DoubanSharpMethod(line));
+		}
+	 }
+#>
+using System;
+using DoubanSharp.Model;
+using RestSharp;
+namespace DoubanSharp.Service
+{
+public partial class DoubanService
+{
+<# foreach(var method in methodList) { 
+	if(method.Type!="Null"){#>
+		public void <#= method.Name #>(<# var count = method.Parameters.Count(); for(var i = 0; i < count; i++) { var parameter = method.Parameters[i]; #><#= parameter.Type #> <#= parameter.Name.Replace("-","_") #><# if(i < count - 1) { #>, <# } #><# } #><# if(count > 0) {#>, <# } #>Action<<#= method.Type #>, DoubanResponse> action)
+		{
+			ExecuteRequest(<# switch(method.Method){case "POST": #>Method.POST, <# break; case "PUT": #>Method.PUT, <#break; case "DELETE": #>Method.DELETE, <# break; case "HEAD":#>Method.Head, <# break; case "OPTIONS": #>Method.Options, <# break; default: break; } #>action, <#= method.Path #><# if(count > 0) { #>, <# } #><# for(var i = 0; i < count; i++) { var parameter = method.Parameters[i]; #>"<# if(i == 0) { #>?<# } else { #>&<# } #><#=parameter.Name #>=", <#= parameter.Name.Replace("-","_") #><# if(i < count - 1) { #>, <# } #><# } #>);
+		}
+
+<# }else{#>
+       public void <#= method.Name #>(<# if(!string.IsNullOrEmpty(method.EntryValue)){ #><#= method.EntryType #> <#= method.EntryValue #>,<# } #><# var count = method.Parameters.Count(); for(var i = 0; i < count; i++) { var parameter = method.Parameters[i]; #><#= parameter.Type #> <#= parameter.Name.Replace("-","_") #><# if(i < count - 1) { #>, <# } #><# } #><# if(count > 0) {#>, <# } #>Action<DoubanResponse> action)
+		{
+            ExecuteRequest(<# switch(method.Method){case "POST": #>Method.POST, <# break; case "PUT": #>Method.PUT, <#break; case "DELETE": #>Method.DELETE, <# break; case "HEAD":#>Method.Head, <# break; case "OPTIONS": #>Method.Options, <# break; default:#>Method.GET, <# break; } #>action, <#= method.Path #><# if(!string.IsNullOrEmpty(method.EntryValue)){ #>,<#= method.EntryValue #><# } #><# if(count > 0) { #>, <# } #><# for(var i = 0; i < count; i++) { var parameter = method.Parameters[i]; #>"<# if(i == 0) { #>?<# } else { #>&<# } #><#=parameter.Name #>=", <#= parameter.Name.Replace("-","_") #><# if(i < count - 1) { #>, <# } #><# } #>);
+		}
+			
+<#}} #>
+}
+}
+<#+
+	internal class DoubanSharpMethod
+	{
+		public string Type
+		{
+			get; private set;
+		}
+		public string Name
+		{
+			get; private set;
+		}
+		public string Path
+		{
+			get; private set;
+		}
+		public string Method
+		{
+			get; private set;
+		}
+		public string EntryType
+		{
+			get;private set;
+		}
+		public string EntryValue
+		{
+			get; private set;
+		}	
+		public List<DoubanSharpMethodParameter> Parameters
+		{
+			get; private set;
+		}
+
+		internal DoubanSharpMethod(string line)
+		{
+		     var parts = line.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+			 Type = parts[0].Trim();
+			 
+			 var pathParts = parts[1].Trim().Split(new string[] { ":" }, StringSplitOptions.RemoveEmptyEntries);
+			 Name = pathParts[0];
+			 Method = pathParts.Length > 1 ? Method = pathParts[1] : "GET";
+
+			 Path = parts[2].Trim();
+
+			 Parameters = new List<DoubanSharpMethodParameter>();
+			 for(var i = 3; i < parts.Length; i++)
+			 {
+				var data = parts[i].Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+				if(i==3 && data[0].IndexOf("Douban")>=0)
+				{
+					this.EntryType=data[0];
+					this.EntryValue=data[1];
+					continue;
+				}
+				Parameters.Add(new DoubanSharpMethodParameter() { Type = data[0], Name = data[1] });
+			 }
+		}
+	}
+
+	internal class DoubanSharpMethodParameter
+	{
+		public string Type
+		{
+			get; set;
+		}
+		public string Name
+		{
+			get; set;
+		}
+	}
+
+#>

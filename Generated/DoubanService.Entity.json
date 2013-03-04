@@ -1,0 +1,310 @@
+﻿DoubanPeople$$
+{
+    "id": "1000001",
+    "uid": "ahbei",
+    "name": "阿北",
+    "avatar": "http://img3.douban.com/icon/u1000001-28.jpg", //头像小图
+    "alt": "http://www.douban.com/people/ahbei/",
+    "relation": "contact", //和当前登录用户的关系，friend或contact
+    "created": "2006-01-09 21:12:47", //注册时间
+    "loc_id": "108288", //城市id
+    "loc_name": "北京", //所在地全称
+    "desc": "     现在多数时间在忙忙碌碌地为豆瓣添砖加瓦。坐在马桶上看书，算是一天中最放松的时间。
+
+    我不但喜欢读书、旅行和音乐电影，还曾经是一个乐此不疲的实践者，有一墙碟、两墙书、三大洲的车船票为记。现在自己游荡差>不多够了，开始懂得分享和回馈。豆瓣是一个开始，希望它对你同样有用。
+
+    (因为时间和数量的原因，豆邮和"@阿北"不能保证看到。有豆瓣的问题请email联系help@douban.com。)"
+}
+$$$
+DoubanBook$$
+{
+    "id":"1003078",
+    "isbn10":"7505715666",
+    "isbn13":"9787505715660",
+    "title":"小王子",
+    "origin_title":"",
+    "alt_title":"",
+    "subtitle":"",
+    "url":"http:\/\/api.douban.com\/v2\/book\/1003078",
+    "alt":"http:\/\/book.douban.com\/subject\/1003078\/",
+    "image":"http:\/\/img1.douban.com\/mpic\/s1001902.jpg",
+    "images":{
+        "small":"http:\/\/img1.douban.com\/spic\/s1001902.jpg",
+        "large":"http:\/\/img1.douban.com\/lpic\/s1001902.jpg",
+        "medium":"http:\/\/img1.douban.com\/mpic\/s1001902.jpg"
+        },
+    "author":[
+        "（法）圣埃克苏佩里"
+        ],
+    "translator":[
+        "胡雨苏"
+        ],
+    "publisher":"中国友谊出版公司",
+    "pubdate":"2000-9-1",
+    "rating":{"max":10,"numRaters":9438,"average":"9.1","min":0},
+    "tags":[
+        {"count":2416,"name":"小王子"},
+        {"count":1914,"name":"童话"},
+        {"count":1185,"name":"圣埃克苏佩里"},
+        {"count":863,"name":"法国"},
+        {"count":647,"name":"经典"},
+        {"count":597,"name":"外国文学"},
+        {"count":495,"name":"感动"},
+        {"count":368,"name":"寓言"}
+        ],
+    "binding":"平装",
+    "price":"19.8",
+    "pages":"111",
+    "author_intro":"圣埃克苏佩里（1900－1944）1900年，尼采逝世。这一年，安德烈・纪德在布鲁塞尔一次会议上宣称：“当今文学土地的面貌可以说是一片沼泽。”1900年，圣埃克苏佩里诞生。净化沼泽的意愿和能力历史地落在这个“世纪儿”的身上，圣埃克苏佩里是尼采式的第二代法国作家，拿但业的儿子，琐罗亚斯德的孙子，这个飞行员受到极大的遗传影响。灾种影响使他在探索、忧虑和英雄主义的道路上走到尽头。如尼采所说：“你应该超截止自己，走得更远，登得更高，直至群星在你脚下。”尼采成为他座舱中想象的伙伴。这个飞越沙漠和海洋的年轻驾驶员同样也遵循着纪德的教诲：“与其过宁静的生活，不如过悲怆的生活。”圣埃克苏佩里在他整个的一生中都在反复思考力量和热诚的真谛。\n圣埃克苏佩里（AntoinedeSaiot-Exupery），1900年出生于法国里昂，1921-1923年在法国空军中服役，曾是后备飞行员，后来又成为民用航空驾驶员，参加了开辟法国――非洲――南美国际航线的工作，其间他还从事文学写作，作品有《南线班机》（1930），《夜航》（1931）等等。\n1939年德国法西斯入侵法国，鉴于圣埃克苏佩里曾多次受伤，医生认为他不能再入伍参战；但经他坚决要求，参加了抗德战争，被编入2\/33空军侦察大队。1940年法国在战争中溃败，他所在的部队损失惨重，该部被调往阿尔及尔，随后即被复员，他只身流亡美国。在美国期间，他继续从事写作，1940年发表了《战斗飞行员》，1943年发表了《给一个人质的信》以及《小王子》。\n1943年，在他的强烈要求下，他回到法国在北非的抗战基地阿尔及尔。他的上级考虑到他的身体和年龄状况，只同意他执行五次飞行任务，他却要求到八次，1944年7月31日上午，他出航执行第八次任务，从此再也没有回来，牺牲时，年仅44岁。\n在欧洲某地的一个湖中，发现了圣・德克旭贝里的飞机残骸。这次搜索是经过对他最后一次出航的线路和德军当时的空军记录研究以后进行的，经过认证确认是那架失踪了半个世纪的侦察机。为了纪念这位伟大的战士和文学家，当地决定为这架飞机的残骸建立一个博物馆，以他的名字命名，陈列他的作品和遗物。",
+    "summary":"小王子驾到！大家好，我是小王子，生活在B612星球，别看我是王子出生，我要做的事也不少，有时给花浇水，有时我还得耐心地把火山口通一通。实在闷得发慌的时候，为了找些事做，学点东西，我也访问一些其他的星球，像325号、326号、327号之类的。当然，我经历的事情也不少，有开心的，也有不开心的。这些事我通常会向地球上一个叫圣埃克苏佩里的人倾诉。对了，你可不要小瞧他，他是拿但业的儿子，琐罗亚斯德的孙子。他还被人们认为尼采式的第二代法国作家。他一生有两大爱好：飞行和写作。我之所以能够这样受欢迎也是他的功劳。因为他把我在其他星球的所见所闻编成了一本小书，也就是你们即将看到的这一本。它不但被誉为有史以来阅读仅次于《圣经》的书，全球发行的语言更是超过100种。可惜的是，在这本书出版后没多久，他在一次架机执行任务时一去不复返了，没有人知道他去了哪里。今天我第一次来到中国，还希望大家同样能够喜欢我。在这本书里他收藏了很多我在其他星球的精美彩图，而且，值得一提的是，中国著名的评论家周国平先生也特意为我作序。可以说，这本书不仅小朋友们爱不释手，就连大人们也会看得如痴如醉。糟糕，我还忘了告诉你，你只有在卓越网（www.joyo.com）才能找到我。有缘的话，我们很快就能相见了。\n尼采、纪德、圣埃克苏佩里是同一家庭的成员，由无可否认的联系连在一起。圣埃克苏佩里热爱尼采。纪德热爱圣埃克苏佩里。\n1945年2月1日《费加罗报》上，他谈到这位飞行员：\"他无论在何处着陆，都是为了带去欢乐。\"\n但是圣埃克苏佩里将公正置于友谊之上。他在《札记》中写道：\"纪德评价，却不曾体验。\"确切的见解。这是行动者面对思想者所感到的骄傲。尼采和纪德孕育了一种道德，并用美妙的文学冲动表现出来。只有圣埃克苏佩里一人在危险和充实中体验了这种道德。他是翱翔于九天的琐罗亚斯德，是乘风飞去的拿但业。他的书房便是机舱。他的格言：事事体验。他的作品：生活。圣埃克苏佩里对尼采的力量和纪德的热诚做作了合理的总结：他的冒险为职业，把写作当嗜好，他在飞行员的位置上实现着克尔桤郭尔的愿望：\"做一个思想家和做一个人，二者尽量不要区别开来，这样才是明智的。\"--（法）玛雅·戴斯特莱姆"
+}
+$$$
+DoubanBookReview$$
+{
+    "id":1000104,
+    "title":"长大就笨了",
+    "alt":"http:\/\/book.douban.com\/review\/1000104\/",
+    "author":User,
+    "book":Book,
+    "rating":{
+        "max":5,
+        "value":"5",
+        "min":1
+        },
+    "votes":1376,
+    "useless":36,
+    "comments":292,
+    "summary":"「我在」：http://www.bighead.cn/?p=67\r\n\r\n\r\n那天我第一次打开《小王子》，就呆了。不是因为它的清新剔透，而是圣...",
+    "published":"2005-04-06 11:51:52",
+    "updated":"2012-08-30 20:48:23"
+}
+$$$
+DoubanTag$$
+{
+    "count":20,
+    "alt":"http:\/\/api.douban.com\/tag\/经典",
+    "title":"经典"
+}
+$$$
+DoubanMovie$$
+{
+    "rating":{"max":10,"average":"0.0","numRaters":20,"min":0},
+    "author":[{"name":"陈凯歌 Kaige Chen"}],
+    "alt_title":"霸王别姬 \/ 再见，我的妾",
+    "image":"http:\/\/img1.douban.com\/spic\/s11317185.jpg",
+    "title":"霸王别姬",
+    "mobile_link":"http:\/\/m.douban.com\/movie\/subject\/10000002\/",
+    "summary":"段小楼（张丰毅）与程蝶衣（张国荣）是一对打小一起长大的师兄弟，两人一个演生，一个饰旦，一向配合天衣无缝，尤其一出《霸王别姬》，更是誉满京城，为此，两人约定合演一辈子《霸王别姬》。但两人对戏剧与人生关系的理解有本质不同，段小楼深知戏非人生，程蝶衣则是人戏不分。\n段小楼在认为该成家立业之时迎娶了名妓菊仙（巩俐），致使程蝶衣认定菊仙是可耻的第三者，使段小楼做了叛徒，自此，三人围绕一出《霸王别姬》生出的爱恨情仇战开始随着时代风云的变迁不断升级，终酿成悲剧。",
+    "attrs":
+    {
+        "language":["汉语普通话"],
+        "pubdate":["1993-01-01(香港)"],
+        "title":["霸王别姬"],
+        "country":["中国大陆","香港"],
+        "writer":["李碧华 Lillian Lee","芦苇 Wei Lu"],
+        "director":["陈凯歌 Kaige Chen"],
+        "cast":["张国荣 Leslie Cheung","张丰毅 Fengyi Zhang","巩俐 Li Gong","葛优 You Ge","英达 Da Ying","蒋雯丽 Wenli Jiang","吴大维 David Wu","吕齐 Qi Lv","雷汉 Han Lei","尹治 Zhi Yin","马明威 Mingwei Ma"],
+        "movie_duration":["171分钟"],
+        "year":["1993"],
+        "movie_type":["剧情","爱情","战争","同性","音乐"]
+    },
+    "alt":"http:\/\/movie.douban.com\/movie\/10000002",
+    "id":10000002,
+    "tags":[
+        {"count":20,"name":"剧情"},
+        {"count":20,"name":"爱情"},
+        {"count":20,"name":"战争"},
+        {"count":20,"name":"同性"},
+        {"count":20,"name":"音乐"}
+    ]
+}
+$$$
+DoubanMovieReview$$
+{
+    "rating":{"max":5,"value":"5","min":1},
+    "updated":"2012-08-31 15:03:06",
+    "author":User,
+    "title":"再见姬别霸王",
+    "votes":0,
+    "comments":0,
+    "summary":"耀目燈光下一雙老去的纖纖玉手猛拔劍，畫面定格在霸王臉目明晰的特寫，一聲撕心裂肺的“蝶衣”響徹放映廳，片尾字幕緩緩隨著西皮二黃的急促上升時，全場揚起不算熱烈卻最密實的掌聲。我瞥了左首邊的女孩一眼，框裡如...",
+    "movie":Movie,
+    "useless":0,
+    "published":"2012-08-31 15:03:06",
+    "alt":"http:\/\/movie.douban.com\/review\/5567544\/",
+    "id":"5567544"
+}
+$$$
+DoubanMusic$$
+{   
+    "id":10000037,
+    "title":"我只在乎你",
+    "alt":"http:\/\/music.douban.com\/music\/10000037",
+    "author":[{"name":"邓丽君"}],
+    "alt_title":"留聲經典復刻版",
+    "tags":[
+        {"count":20,"name":"经典"},
+        {"count":20,"name":"邓丽君"}
+    ],
+    "summary": "邓丽君在1987年推出的唱片专集《我只在乎你》中，有三首歌的词作者是“桃丽莎”。其实，桃丽莎即是邓丽君自己（英文名TERESA的中译）。根据我手中的资料，邓丽君作的词并不多，虽然她确曾向媒体表示“最大的心愿是出一张一脚踢的唱片”——即由自己包办下全部的词曲和制作，但是因意外去世而没能实现。但是，在此专集中竟有三首之多，不能不令人关注。大体上说，这三首歌具有两种风格，一为写实，一为浪漫。《非龙非彲》以现代汉语与古汉语混合，歌词的意境悲凉，心态哀痛，而且隐含着非比寻常的寓意，笔者愿在此写出来就教于方家。",
+    "image":"http:\/\/img1.douban.com\/spic\/s11185741.jpg",
+    "mobile_link":"http:\/\/m.douban.com\/music\/subject\/10000037\/",
+    "attrs":{
+            "publisher":["环球"],
+            "singer":["邓丽君"],
+            "discs":["1"],
+            "pubdate":["1987-01-02"],
+            "title":["我只在乎你"],
+            "media":["CD"],
+            "tracks":["01. 酒醉的探戈\n02. 像故事般温柔\n03. 命运之川\n04. 爱人\n05. 午夜微风\n06. 夏日圣诞\n07. 非龙非彲\n08. 不着痕迹\n09. 心路过黄昏\n10. 我只在乎你"],
+            "version":["专辑"]
+    },
+    rating":{"max":10,"average":"0.0","numRaters":20,"min":0},
+}
+$$$
+DoubanMusicReview$$
+{
+    "rating":{"max":5,"value":"5","min":1},
+    "updated":"2012-08-31 15:03:06",
+    "author":User,
+    "title":"再见,teresa",
+    "votes":0,
+    "comments":0,
+    "summary":"今年是邓丽君小姐逝世15周年,北美歌迷在各地的华人社区举行了盛大的纪念仪式,而我所在的多伦多更是规模空前.1987年邓丽君的一首<<我只在乎你>...",
+    "music":Music,
+    "useless":0,
+    "published":"2012-08-31 15:03:06",
+    "alt":"http:\/\/music.douban.com\/review\/5567544\/",
+    "id":5567544
+}
+$$$
+DoubanMail$$
+{
+    "status": "R",   
+    "id: "256444525",
+    "sender": User,
+    "receiver": User,
+    "title": "你好，我们是电影《二次曝光》，【二次曝光】豆瓣官方小站期待您的关注，时刻都有惊喜带给您！",
+    "published": "2012-07-31 12:40:04",
+    "content": "　　你是否曾深爱过一个人？ 
+   你是否有过一段深爱的恋情？ 
+   你是否有个爱恨交织难舍难分的挚友？ 
+   你是否…… 
+   这是我们的故事，是电影《二次曝光》的故事，也是你的故事。 
+    "
+}
+$$$
+DoubanNote$$
+{
+    "update_time": "2012-08-20 15:55:20",
+    "publish_time": "2012-08-19 01:20:09",
+    "photos": {
+        "2" : "http://img1.douban.com/view/note/large/public/p231928725-2.jpg",
+        "3" : "http://img1.douban.com/view/note/large/public/p231928725-3.jpg",
+        "4" : "http://img1.douban.com/view/note/large/public/p231928725-4.jpg",
+    },
+    "comments_count": 19,
+    "liked_count": 67
+    "recs_count": 72,
+    "id": "231928725",
+    "alt": "http://www.douban.com/note/231928725",
+    "can_reply": true,
+    "title": "《EVA》中现代人的救赎之路 ———论《EVA》中的诺斯替和现代性元素及其他（未完待续）",
+    "privacy": "public",
+    "summary": "《EVA》中现代人的救赎之路 ———论《EVA》中的诺斯替和现代性元素及其他   这个...",
+    "content": "临近20C，当尼采这个狂人宣告上帝已死的时候，现代性才跃出了启蒙思想家的思想图纸，犹如鬼魅一般真正进入了大众民众的日常思想谱系，于是，形式繁多的现代性学说主宰了20C的大众意识形态，无                 论是虚无主义，存在主义，还是马克思主义等等都是现代性语境下的产物。但随着现代性在意识形态的统治地位不断扩张，现代性所引发的病理在21C也愈发彰显。[img=2:C]救赎之路[/img]于是现代性问题成为20C思想界的重要议题，但有两位独树一帜的思想家却引发了我的兴趣，他俩就是约纳斯和沃格林。[img=4:L][/img]沃格林首开先河的提出，基督教早期的异端诺斯替主义像幽灵一样附着于现代性的各种学说之中，并从思想史的角度出发来阐释诺斯替主义和现代性千丝万缕的关系。约纳斯不仅把诺斯替主义看作历史上的一场精神运动，而且进一步把它视为对人类处境的一种独特类型的回应，认为它的思想原则与精神态度普遍地存在于历史的各个阶段。古代的诺斯替宗教..  [url=http://www.douban.com][/url]"
+}
+$$$
+DoubanPhoto$$
+{
+    "id": "1642354684",
+    "alt": "http://www.douban.com/photos/photo/1642354684/",
+    "album_id": "74539453", //所属相册id
+    "album_title": "大菠萝", //所属相册名称
+    "icon": "http://img1.douban.com/view/photo/icon/public/p1642354684.jpg",
+    "thumb": "http://img1.douban.com/view/photo/thumb/public/p1642354684.jpg",
+    "cover": "http://img1.douban.com/view/photo/cover/public/p1642354684.jpg",
+    "image": "http://img1.douban.com/view/photo/photo/public/p1642354684.jpg",
+    "desc": "昨天蹭 @cmgs 的mf打出来的，因为玩51的基友实在太多，所以还是卖了给我尼姑换武器吧 "， 
+    "created": "2012-07-25 08:27:57",
+    "privacy": "public", //可见性，public, friend, private
+    "position": 4,
+    "prev_photo": "1648785331",
+    "next_photo": "1641039878",
+    "liked_count": 0, //喜欢数
+    "recs_count": 0, //推荐数
+    "comments_count": 7, //回复数
+    "author": User,
+    "liked": false, //当前登录用户是否喜欢该图片
+    "sizes": { //各个规格尺寸, 有的尺寸是没有的
+        "icon": [ 100, 49 ] // 小方图
+        "thumb": [ 170, 84 ], //小图
+        "cover": [ 0, 0 ], //封面方图
+        "image": [ 595, 295 ], //大图
+    }
+}
+$$$
+DoubanEvent$$
+{
+    "id":"11038343",
+    "alt":"http://www.douban.com/online/11038343/",
+
+    "title":"新的截图猜电影，来！",
+    "desc":"截图猜电影\r\n猜中后描述改为：\r\n《电影名》 by （猜中者名字）\r\n请遵守规则！\r\n\r\n附注：相关网址是，听>配乐>猜电影友情活动，尽请参加！",
+
+    "tags":["截图", "电影", "交友", "猜图"],
+
+    "created":"2012-02-24 11:49:32",
+    "begin_time":"2012-02-24 11:00:00",
+    "end_time":"2012-05-23 11:00:00",
+
+    "related_url":"http://www.douban.com/online/10999361/",
+    "shuo_topic":"新的截图猜电影，来！", //对应广播的#主题#
+    "cascade_invite":true, //用户能不能邀请友邻加入
+    "group_id":"0", //关联小组的id
+    "album_id":"65606728", //对应相册的id
+
+    "participant_count":13881, //参加人数
+    "photo_count":63281, //照片数
+    "liked_count":2127, //喜欢数
+    "recs_count":417, //推荐数
+
+    "icon":"http://img1.douban.com/bpic/o590273.jpg",
+    "thumb":"http://img1.douban.com/spic/o590273.jpg",
+    "cover":"http://img1.douban.com/tpic/o590273.jpg",
+    "image":"http://img1.douban.com/lpic/o590273.jpg",
+
+    "owner": User,
+    //当前用户是否喜欢，参加
+    "liked": false,
+    "joined": false,
+}
+$$$
+DoubanDiscussion$$
+{
+    "id": "48247785",
+    "title": "火炬不是亮点吗？",
+    "alt": "http://www.douban.com/online/11215600/discussion/48247785/",
+    "created": "2012-08-20 18":09":47",
+    "updated": "2012-08-21 15":43":23",
+    "content": "之前在场中央，之后却被挪走，这脑残设计！",
+    "comments_count": 2,
+    "author": User
+}
+$$$
+DoubanComment$$
+{
+    "id": "48297785",
+    "created": "2012-08-20 18":09":47",
+    "content": "Hello world!",
+    "author": User
+}
+$$$
+DoubanGroupTopic$$
+{"updated":"2013-01-24 16:51:21","group":{"domain":"P","uid":"WHV","member_role":1000,"owner":{"avatar":"http:\/\/img3.douban.com\/icon\/u1676796-31.jpg","alt":"http:\/\/www.douban.com\/people\/swingxx\/","id":"1676796","name":"陈三天","uid":"swingxx"},"alt":"http:\/\/www.douban.com\/group\/WHV\/","id":"253395","name":"Working Holiday","member_count":20887,"created":"2010-06-12 16:29:18","join_type":"A","avatar":"http:\/\/img3.douban.com\/icon\/g253395-2.jpg"},"author":{"avatar":"http:\/\/img3.douban.com\/icon\/u1709688-4.jpg","alt":"http:\/\/www.douban.com\/people\/1709688\/","id":"1709688","name":"失灵","uid":"1709688"},"created":"2012-12-12 17:38:43","title":"来新一周，最靠谱的是选择住在东区Ashley家！","content":"来新西兰一周了，头两天来天是灰的，人是懵的，一切是迷茫不详的，随时都有想逃回家的冲动！\r\n今天是来的第七天，住在Ashely家感动到不行。迷路了有人接，没工作了他们帮着带着推着找，好吃的好玩的省钱的都跟着介绍，异国他乡里终于感觉到了家的温度。都说，心安处是吾家，今天，终于感觉心安了 ，感谢Ashely, GOD BLESS EVERYONE HERE! \r\n\r\nP.S. 强烈建议WHV申请时加一条，一定要有驾照再来！！！","photos":[],"comments_count":28,"alt":"http:\/\/www.douban.com\/group\/topic\/35075240\/","id":"35075240"}
+$$$
+DoubanGroup$$
+{"domain":"P","uid":"WHV","member_role":1000,"owner":{"avatar":"http:\/\/img3.douban.com\/icon\/u1676796-31.jpg","alt":"http:\/\/www.douban.com\/people\/swingxx\/","id":"1676796","name":"陈三天","uid":"swingxx"},"alt":"http:\/\/www.douban.com\/group\/WHV\/","id":"253395","desc":"　　Working Holiday Visa，即打工度假签证。\r\n　　它允许旅行者出于补贴旅行费用的目的而在签证颁发国边打工边旅行。\r\n　　用来鼓励双方国家的公民进行旅行和文化交流。它允许年轻人在外国去体验生活，同时不需要通常的提前寻找工作赞助或者参与昂贵的大学交换生计划。\r\n　　目前对中国大陆开放的国家暂时只有新西兰。\r\n　　持台湾护照可去：日本、加拿大、德国、澳洲、纽西兰、韩国、英国\r\n　　持香港护照可去：新西兰、澳洲、日本、韩国（待补充）\r\n　　持澳门护照可去：（待补充）\r\n\r\n——————————————————————————————————————————————\r\n\r\n新西兰移民局官网：\r\nhttp:\/\/www.immigration.govt.nz\/migrant\/stream\/work\/workingholiday\/chinawhs.htm\r\n↑ 真心想申请的人，一定不会畏惧看上面这个全英文的网页。\r\n请仔细研究每一个条款，一切最新消息以官网为准。\r\n\r\n【以下中文翻译仅供参考】\r\n新西兰working holiday签证基本要求： \r\n1.18-30周岁，中国大陆公民。个人前往，不能带子女。 \r\n2.至少三个月有效期的护照。 \r\n3.有往返机票或单程机票，或者提供等额的资金证明（约1W人民币）。 \r\n4.有最低4200刀新西兰货币的资金证明。（现在新西兰货币与人民币的比值约为5：1） \r\n5.到指定医院做健康检查。（只需要一个X-Ray） \r\n　　指定医院列表：http:\/\/www.immigration.govt.nz\/branch\/chinahomepage\/paneldoctors\/ch.htm\r\n6.最低高中学历。高中学历必须要开具CDGDC证明，高中以上学历只需提供学历原件和翻译件，无需公证。\r\n　　CDGDC认证：http:\/\/cqv.chinadegrees.cn\/cn\/\r\n7.必须提供IELTS 成绩。5.5分以上。A类和G类均可。\r\n　　这个最重要，IELTS一定要考，香港和台湾是不用考的。 （不可用托福专八四六级等代替！！！）\r\n8.申请费用165刀。这个必须要在线支付，请提前准备好可以用于网上支付的VISA卡或者master卡。\r\n　　不能用网银借记卡，不能用支付宝。\r\n\r\n【！！！注意！！！】\r\n现在提交材料的期限是一个月，所以必须考了雅思再上网提交申请表付款。\r\n不要再出现提交申请交了钱之后问我说雅思还没考该怎么办！\r\n\r\n具体申请流程参考：http:\/\/www.douban.com\/group\/topic\/24086724\/\r\n\r\n——————————————————————————————————————————————\r\n\r\n【小组精华帖大集合】你可能会用到的信息，不定期更新。\r\nhttp:\/\/www.douban.com\/group\/topic\/15619204\/\r\n↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑\r\n希望刚加进小组，对WHV还不是很熟悉的大家，能够自己先仔细看一下，而不是急着发帖发豆邮问人。\r\n\r\n\r\n【相关网站】\r\n背包客栈：http:\/\/www.bbkz.com\/forum\/forumdisplay.php?f=122\r\n旅行箱的家：http:\/\/www.suitcasehome.com\r\nWHVer之家：http:\/\/www.whver.com\/ \r\n豆瓣小站：http:\/\/site.douban.com\/122998\/\r\n大非的博客：http:\/\/feiim.com\r\n间隔年义工旅行网的working holiday版块http:\/\/bbs.freegapper.com\/forum-11-1.html\r\n\r\nQQ群集中发布在这里：\r\nhttp:\/\/www.douban.com\/group\/topic\/29400026\/\r\n新浪微博请随意勾搭：\r\nhttp:\/\/www.douban.com\/group\/topic\/20786618\/\r\n\r\n——————————————————————————————————————————————\r\n\r\n【发帖基本原则】\r\n保持谦虚谨慎的态度，保持对他人的基本尊重，平等理性地讨论。\r\n\r\n希望大家踊跃发言，并邀请身边对 Working Holiday 感兴趣的人加入~ \r\n\r\n最后\r\n谢谢大家的支持。^_^\r\n\r\n","name":"Working Holiday","member_count":20887,"created":"2010-06-12 16:29:18","join_type":"A","admins":[{"avatar":"http:\/\/img3.douban.com\/icon\/u1676796-31.jpg","alt":"http:\/\/www.douban.com\/people\/swingxx\/","id":"1676796","name":"陈三天","uid":"swingxx"},{"avatar":"http:\/\/img3.douban.com\/icon\/u4645437-2.jpg","alt":"http:\/\/www.douban.com\/people\/meizu2016\/","id":"4645437","name":"魅足","uid":"meizu2016"},{"avatar":"http:\/\/img3.douban.com\/icon\/u1079305-7.jpg","alt":"http:\/\/www.douban.com\/people\/1079305\/","id":"1079305","name":"dsky","uid":"1079305"},{"avatar":"http:\/\/img3.douban.com\/icon\/u41864062-6.jpg","alt":"http:\/\/www.douban.com\/people\/41864062\/","id":"41864062","name":"落英舞雩","uid":"41864062"},{"avatar":"http:\/\/img3.douban.com\/icon\/u2537417-11.jpg","alt":"http:\/\/www.douban.com\/people\/parischen\/","id":"2537417","name":"♥. Paris","uid":"parischen"},{"avatar":"http:\/\/img3.douban.com\/icon\/u2993899-16.jpg","alt":"http:\/\/www.douban.com\/people\/leeblink\/","id":"2993899","name":"猪肝君和罐头李","uid":"leeblink"},{"avatar":"http:\/\/img3.douban.com\/icon\/u3349521-25.jpg","alt":"http:\/\/www.douban.com\/people\/bluesmry\/","id":"3349521","name":"blues","uid":"bluesmry"}],"avatar":"http:\/\/img3.douban.com\/icon\/g253395-2.jpg"}
+$$$
+DoubanGroupTopicList$$
+{"topics":[{"updated":"2013-01-24 16:59:11","author":{"avatar":"http:\/\/img3.douban.com\/icon\/u1831260-1.jpg","alt":"http:\/\/www.douban.com\/people\/Tayaya\/","id":"1831260","name":"小清新的海","uid":"Tayaya"},"created":"2013-01-23 19:16:07","title":"我想对没来或者已经来了NZ的WHV妹纸们说。。。","content":"来了的，胖了吧，老了吧，魔咒啊。。。。。\r\n\r\n没来的，就别带紧身裤了，会胖的，放心，魔咒，木有人可以逃得了。。。会老的，多少保养品都木有用，也许是日晒，也许是看多了风景后沧桑的心。\r\n\r\n为毛来这边的汉纸都瘦了呢！！！！！！一天站8H+还要抛弃裤子的妹纸内心伤不起啊啊啊啊啊","photos":[],"comments_count":3,"alt":"http:\/\/www.douban.com\/group\/topic\/36227245\/","id":"36227245"}],"total":2673}

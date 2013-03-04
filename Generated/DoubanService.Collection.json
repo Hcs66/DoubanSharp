@@ -1,0 +1,5 @@
+﻿DoubanCollection,GetCollection,"collection/{collectionID}",string collectionID
+DoubanCollectionSearchResults,SearchCollections,"people/{userID}/collection",string userID,string cat,string tag,string status,string start-index,string max-results
+Null,AddCollection:POST,"collection",DoubanCollection collection
+Null,UpdateCollection:PUT,"collection/{collectionID}",DoubanCollection collection,string collectionID
+Null,DeleteCollection:DELETE,"collection/{collectionID}",string collectionID

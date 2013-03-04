@@ -1,0 +1,3 @@
+﻿DoubanPeople,GetPeople,"v2/user/{userId}",string userId
+DoubanPeople,GetPeopleAuthorized,"v2/user/~me"
+DoubanPeopleSearch,SearchPeople,"v2/user",string q,string start,string count

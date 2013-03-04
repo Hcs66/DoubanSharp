@@ -1,0 +1,7 @@
+﻿DoubanBook,GetBook,"v2/book/{subjectId}",string subjectId
+DoubanBook,GetBookByISBN,"v2/book/isbn/{isbn}",string isbn
+DoubanMovie,GetMovie,"v2/movie/{subjectId}",string subjectId
+DoubanMusic,GetMusic,"v2/music/{subjectId}",string subjectId
+DoubanBookSearch,SearchBooks,"v2/book/search",string q,string tag,string start,string count
+DoubanMovieSearch,SearchMovies,"v2/movie/search",string q,string tag,string start,string count
+DoubanMusicSearch,SearchMusics,"v2/music/search",string q,string tag,string start,string count

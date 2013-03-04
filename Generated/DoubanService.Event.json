@@ -1,0 +1,14 @@
+﻿DoubanEvent,GetEvent,"event/{eventID}",string eventID
+DoubanEventSearchResults,SearchPeopleEvents,"people/{userID}/events",string userID,string start-index,string max-results
+DoubanEventSearchResults,SearchPeopleInitiateEvents,"people/{userID}/events/initiate",string userID,string start-index,string max-results
+DoubanEventSearchResults,SearchPeopleParticipateEvents,"people/{userID}/events/participate",string userID,string start-index,string max-results
+DoubanEventSearchResults,SearchPeopleWishEvents,"people/{userID}/events/wish",string userID,string start-index,string max-results
+DoubanEventSearchResults,SearchCityEvents,"event/location/{locationID}",string locationID,string type,string start-index,string max-results
+DoubanEventSearchResults,SearchEvents,"events",string q,string location,string start-index,string max-results
+Null,AddEvent:POST,"events",DoubanEvent doubanEvent
+Null,AddParticipateEvent:POST,"event/{eventID}/participants",string eventID
+Null,AddWishEvent:POST,"event/{eventID}/wishers",string eventID
+Null,DeleteParticipateEvent:DELETE,"event/{eventID}/participants",string eventID
+Null,DeleteWishEvent:Delete,"event/{eventID}/wishers",string eventID
+Null,UpdateEvent:PUT,"event/{eventID}",DoubanEvent doubanEvent,string eventID
+DoubanEventDeleteResult,DeleteEvent:POST,"event/{eventID}/delete",DoubanEventDeleteContent content,string eventID

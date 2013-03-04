@@ -1,0 +1,2 @@
+﻿DoubanMiniBlogSearch,SearchMiniBlogs,"shuo/v2/statuses/home_timeline",string start,string count
+Null,AddMiniBlog:POST,"shuo/v2/statuses/",DoubanMiniBlog miniBlog,string text

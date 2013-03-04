@@ -1,0 +1,6 @@
+﻿DoubanNote,GetNote,"note/{noteID}",string noteID
+DoubanNoteSearchResults,SearchNotes,"people/{userID}/notes",string userID,string start-index,string max-results
+Null,AddNote:POST,"notes",DoubanNote note
+Null,DeleteNote:DELETE,"note/{noteID}",string noteID
+Null,UpdateNote:PUT,"note/{noteID}",DoubanNote note,string noteID
+

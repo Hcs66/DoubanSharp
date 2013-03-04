@@ -1,0 +1,34 @@
+﻿<#+
+public class DoubanAPIWrapper
+{
+    private static Regex propNamePattern = new Regex("\"([\\S]+)\":");
+	public string APIName{get;set;}
+	public List<string> EntityPropertyList {get;set;}
+
+	public DoubanAPIWrapper(string template)
+	{
+		string[] parts=template.Split(new string[] { "$$" }, StringSplitOptions.RemoveEmptyEntries);
+		this.APIName=parts[0];
+		MatchCollection matchs=propNamePattern.Matches(parts[1]);
+		EntityPropertyList=new List<string>();
+		foreach(Match match in matchs)
+		{
+			EntityPropertyList.Add(GetPropName(match.Groups[1].Value));
+		}
+
+	}
+
+	private string GetPropName(string oldName)
+{
+	string[] oldParts=oldName.Split('_');
+	string newName="";
+	foreach(var part in oldParts)
+	{
+		newName+=char.ToUpperInvariant(part[0]) + part.Substring(1);
+	}
+	return newName;
+}
+}
+	
+
+#>

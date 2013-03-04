@@ -1,0 +1,7 @@
+﻿DoubanReview,GetReview,"review/{reviewID}",string reviewID
+DoubanReviewSearchResults,SearchBookReviews,"book/subject/{subjectID}/reviews",string subjectID,string start-index,string max-results,string orderby
+DoubanReviewSearchResults,SearchBookReviewsByISBN,"book/subject/isbn/{isbnID}/reviews",string isbnID,string start-index,string max-results,string orderby
+DoubanReviewSearchResults,SearchMovieReviews,"movie/subject/{subjectID}/reviews",string subjectID,string start-index,string max-results,string orderby
+DoubanReviewSearchResults,SearchMovieReviewsByIMDB,"movie/subject/imdb/{imdbID}/reviews",string imdbID,string start-index,string max-results,string orderby
+DoubanReviewSearchResults,SearchMusicReviews,"music/subject/{subjectID}/reviews",string subjectID,string start-index,string max-results,string orderby
+Null,AddReview:POST,"reviews",DoubanReview review

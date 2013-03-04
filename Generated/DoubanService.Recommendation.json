@@ -1,0 +1,8 @@
+﻿DoubanRecommendation,GetRecommendation,"recommendation/{recommendationID}",string recommendationID
+DoubanRecommendationSearchResults,SearchPeopleRecommendations,"people/{userID}/recommendations",string userID,string start-index,string max-results
+DoubanCommentSearchResults,SearchRecomdComment,"recommendation/{recommendationID}/comments",string recommendationID,string start-index,string max-results
+Null,AddRecommendation:POST,"recommendations",DoubanRecommendation recommendation
+Null,DeleteRecommendation:DELETE,"recommendation/{recommendationID}",string recommendationID
+Null,AddRecomdComment:POST,"recommendation/{recommendationID}/comments",DoubanComment comment,string recommendationID
+Null,DeleteRecomedComment:DELETE,"recommendation/{recommendationID}/comment/{commentID}",string recommendationID,string commentID
+

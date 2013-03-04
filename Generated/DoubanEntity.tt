@@ -1,0 +1,70 @@
+<#@ template language="C#" debug="True"  hostspecific="True" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Text.RegularExpressions" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating"#>
+<#@ include file="MultipleOutputHelper.ttinclude" #>
+
+<# var manager = Manager.Create(Host, GenerationEnvironment); #>
+<# 
+	List<DoubanEntityWrapper> apiWrappers=new List<DoubanEntityWrapper>();
+    string absolutePath = Host.ResolvePath("DoubanService.Entity.json");
+    string contents = File.ReadAllText(absolutePath);
+	contents=contents.Replace("\r","").Replace("\n","");
+	string[] parts=contents.Split(new string[] { "$$$" }, StringSplitOptions.RemoveEmptyEntries);
+	foreach(var part in parts)
+	{
+		var apiWrapper = new DoubanEntityWrapper(part);
+		apiWrappers.Add(apiWrapper);
+	}
+	foreach(var apiWrapper in apiWrappers)
+	{	
+		manager.StartNewFile(apiWrapper.EntityName+".cs"); #>
+namespace DoubanSharp.Model
+{
+	public class <#= apiWrapper.EntityName#> : DoubanModelBase
+	{
+            <# foreach(var prop in apiWrapper.EntityPropertyList){#>
+	public string <#=prop#> {get;set;}
+			<#}#>
+	}
+}
+       <# } manager.EndBlock(); #>
+
+<# manager.Process(true); #>
+
+<#+
+public class DoubanEntityWrapper
+{
+    private static Regex propNamePattern = new Regex("\"([\\S]+)\":");
+	public string EntityName{get;set;}
+	public List<string> EntityPropertyList {get;set;}
+
+	public DoubanEntityWrapper(string template)
+	{
+		string[] parts=template.Split(new string[] { "$$" }, StringSplitOptions.RemoveEmptyEntries);
+		this.EntityName=parts[0];
+		MatchCollection matchs=propNamePattern.Matches(parts[1]);
+		EntityPropertyList=new List<string>();
+		foreach(Match match in matchs)
+		{
+			EntityPropertyList.Add(GetPropName(match.Groups[1].Value));
+		}
+
+	}
+
+	private string GetPropName(string oldName)
+{
+	string[] oldParts=oldName.Split('_');
+	string newName="";
+	foreach(var part in oldParts)
+	{
+		newName+=char.ToUpperInvariant(part[0]) + part.Substring(1);
+	}
+	return newName;
+}
+}
+	
+
+#>

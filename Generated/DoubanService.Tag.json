@@ -1,0 +1,4 @@
+﻿DoubanTagSearchResults,SearchBookTags,"book/subject/{subjectID}/tags",string subjectID,string start-index,string max-results
+DoubanTagSearchResults,SearchMovieTags,"movie/subject/{subjectID}/tags",string subjectID,string start-index,string max-results
+DoubanTagSearchResults,SearchMusicTags,"music/subject/{subjectID}/tags",string subjectID,string start-index,string max-results
+DoubanTagSearchResults,SearchPeopleTags,"people/{userID}/tags",string userID,string cat,string start-index,string max-results
