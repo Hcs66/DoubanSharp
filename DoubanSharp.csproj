@@ -99,6 +99,7 @@
     <Compile Include="Model\DoubanBookSearch.cs" />
     <Compile Include="Model\DoubanComment.cs" />
     <Compile Include="Model\DoubanDiscussion.cs" />
+    <Compile Include="Model\DoubanErrorMsessage.cs" />
     <Compile Include="Model\DoubanEvent.cs" />
     <Compile Include="Model\DoubanGroup.cs" />
     <Compile Include="Model\DoubanGroupTopic.cs" />

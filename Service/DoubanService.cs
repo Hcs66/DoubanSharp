@@ -164,8 +164,56 @@ namespace DoubanSharp.Service
             _apiClient.ExecuteAsync(request,
                 (resp) =>
                 {
+                    ////accesstoken过期处理
+                    //if (resp.StatusCode == HttpStatusCode.BadRequest)
+                    //{
+                    //    if (!string.IsNullOrEmpty(resp.Content))
+                    //    {
+                    //        try
+                    //        {
+                    //            DoubanErrorMsessage msg = _jsonDeserializer.Deserialize<DoubanErrorMsessage>(resp);
+                    //            msg.RawSource = resp.Content;
+                    //            if (msg.Code == "106")
+                    //            {
+                    //                //通过refreshtoken获取新的accesstoken
+                    //                RefreshToken(action);
+                    //            }
+                    //        }
+                    //        catch (Exception ex)
+                    //        {
+                    //            resp.StatusCode = HttpStatusCode.BadRequest;
+                    //            resp.ErrorException = ex;
+                    //        }
+                    //    }
+                    //}
+                    //else
+                    //{
                     action(new DoubanResponse() { RestResponse = resp });
+                    //}
                 });
+        }
+
+        private void RefreshToken(Action<DoubanResponse> action)
+        {
+            var request = new RestRequest("service/auth2/token", Method.POST);
+            request.AddParameter("client_id", _consumerKey);
+            request.AddParameter("client_secret", _consumerSecret);
+            request.AddParameter("redirect_uri", _redirectUrl);
+            request.AddParameter("grant_type", "refresh_token");
+            request.AddParameter("refresh_token", _accessToken.RefreshToken);
+            _oauthClient.ExecuteAsync(request,
+                (respone) =>
+                {
+                    OAuthAccessToken token = _jsonDeserializer.Deserialize<OAuthAccessToken>(respone);
+                    if (!string.IsNullOrEmpty(token.AccessToken))
+                    {
+                        respone.StatusCode = HttpStatusCode.OK;
+                        _hasAuthenticated = true;
+                        _accessToken = token;
+                    }
+                    action(new DoubanResponse() { RestResponse = respone });
+                }
+            );
         }
 
         private void ExecuteRequest<T>(Action<T, DoubanResponse> action, string path) where T : IDoubanModel

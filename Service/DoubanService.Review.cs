@@ -84,7 +84,7 @@ namespace DoubanSharp.Service
                         {
                             reviewContent = desc.InnerText;
                         }
-                        review.Content = m_HtmlTagRegex.Replace(reviewContent, "");
+                        review.Content = m_HtmlTagRegex.Replace(reviewContent, "");    
                         doubanResp.RestResponse = new RestResponse() { StatusCode = httpResponse.StatusCode };
                         action(review, doubanResp);
                     }
