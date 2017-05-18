@@ -8,7 +8,6 @@ using RestSharp;
 using RestSharp.Deserializers;
 using System.Collections.Generic;
 
-//测试git
 namespace DoubanSharp.Service
 {
     /// <summary>
